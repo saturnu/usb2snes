@@ -13,6 +13,9 @@
 #include "gopt.h"
 #include "usb2snes.h"
 
+#ifdef __APPLE__
+   #define __unix__
+#endif
 
 #ifdef __unix__
 //unix
