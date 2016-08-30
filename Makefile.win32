@@ -1,0 +1,9 @@
+all: usb2snes
+
+OBJS = usb2snes.c gopt.c rs232.c
+
+usb2snes: $(OBJS)
+	gcc -static $(OBJS) -Wall -Wextra -o2 -o usb2snes
+
+clean:
+	rm usb2snes.exe
